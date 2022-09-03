@@ -1,0 +1,182 @@
+//Поключение шрифта
+@import "fonts.scss";
+
+// Подключение переменных и миксинов
+@import "variables.scss";
+
+
+// Select city magnific popup
+.select-city {
+	position: relative;
+	margin: 0 auto;
+	padding: 15px 30px;
+	max-width: 400px;
+	height: 250px;
+	@media(max-width:$bp640) {
+		max-width: 350px;
+		height: 200px;
+	}
+	@media(max-width:$bp450) {
+		max-width: 280px;
+	}
+	@media(max-width:$bp320) {
+		max-width: 230px;
+	}
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: $ligthcolor;
+	box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
+	border-radius: 20px;
+	&__title {
+		margin-bottom: 1em;
+	}
+
+	&__form {
+		width: 100%;
+		input[type="radio"] {
+			display: none;
+		}
+		#city1:checked:checked ~ .label-city1 span,
+		#city2:checked:checked ~ .label-city2 span {
+			color: $orangeclr;
+		}
+		label {
+			cursor: pointer;
+			span {
+				transition: all 0.2s ease-out 0s;
+				&:hover {
+					font-weight: 700;
+				}
+			}
+		}
+		font-family: $futura400;
+		color: $titlecolor;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		row-gap: 1.5em;
+
+	}
+	.mfp-close {
+		color: $titlecolor;
+	}
+}
+// =========================================
+
+// Вкладка меню "Про нас"
+
+#about-us {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+}
+.about-menu {
+	opacity: 0;
+	position: absolute;
+	z-index: 20;
+	transform: translate(-15%, 10%);
+	@media(max-width:$bp980) {
+		transform: translate(-30%, 10%);
+	}
+	background: #FFFFFF;
+	box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
+	border-radius: 20px;
+	transition: all 0.5s ease-in 0s;
+	&._active {
+		display: block;
+		opacity: 1;
+	}
+	&__wrapper {
+		padding: 0px 5px;
+		width: 300px;
+		height: 230px;
+		@media(max-width:$bp980) {
+			padding: 1em 2em;
+			width: auto;
+			height: auto;
+		}
+		display: flex;
+		align-items: center;
+	}
+	&__list {
+		flex: 1 1 auto;
+	}
+
+	&__item {
+		padding: 10px 0px;
+		@include adaptiv-value("padding-left", 45, 15, 2);
+		border-radius: 10px;
+		transition: all 0.3s ease 0s;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+		// &:hover {
+		// 	background-color: #59443f2a;
+		// }
+	}
+
+	&__link {
+		font-family: $futura400;
+		color: $titlecolor;
+		line-height: 1.5;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			font-family: $futura500;
+			text-indent: 10px;
+		}
+	}
+}
+// =============================================================
+
+.authorization {
+	margin: 0 auto;
+	position: relative;
+	padding: 2.5em 1.4em 2.5em 1.5em;
+	text-align: center;
+	max-width: 400px;
+	background: $ligthcolor;
+	box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
+	border-radius: 20px;
+	&__title {
+		margin: 0 auto;
+		max-width: 60%;
+		margin-bottom: 1.1em;
+	}
+}
+.authorization-form {
+	.phone-label {
+		display: none;
+	}
+	input[type="tel"] {
+		margin-bottom: 1.6em;
+		padding: 0.8em;
+		width: 100%;
+		height: 3em;
+		font-family: $futura400;
+		line-height: 1.25;
+		background: $ligthcolor;
+		border: 1.5px solid #EDE9E8;
+		border-radius: 20px;
+	}
+	.submit__button {
+		margin: 0 auto;
+		display: flex;
+		max-width: 85%;
+		justify-content: center;
+		align-items: center;
+	}
+	input[type="submit"] {
+		display: none;
+	}
+}
+
+.button__skip {
+	margin-top: 1.6em;
+	.skip {
+		text-transform: uppercase;
+		color: $orangeclr;
+	}
+}

@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'iconsfont';
+	src: url("../fonts/iconsfont/iconsfont.woff2") format("woff2"),
+		url("../fonts/iconsfont/iconsfont.woff") format("woff"),
+		url("../fonts/iconsfont/iconsfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class*=" ic-"]:before, [class^="ic-"]:before {
+	font-family: 'iconsfont' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+.ic-location:before {
+	content: "\e900"
+}
+.ic-arrow:before {
+	content: "\e901"
+}
+.ic-24-7:before {
+	content: "\e902"
+}
+.ic-equipment:before {
+	content: "\e903"
+}
+.ic-experience:before {
+	content: "\e904"
+}
+.ic-grooming:before {
+	content: "\e905"
+}
+.ic-laboratory:before {
+	content: "\e906"
+}
+.ic-pharmacy1:before {
+	content: "\e907"
+}
+.ic-spectre:before {
+	content: "\e908"
+}
+.ic-stationars:before {
+	content: "\e909"
+}
+.ic-fb:before {
+	content: "\e90a"
+}
+.ic-inst:before {
+	content: "\e90b"
+}
+.ic-vk:before {
+	content: "\e90c"
+}
+.ic-youtube:before {
+	content: "\e90d"
+}
+.ic-dentists:before {
+	content: "\e90e"
+}
+.ic-dermatology:before {
+	content: "\e90f"
+}
+.ic-diagnostic:before {
+	content: "\e910"
+}
+.ic-endocr:before {
+	content: "\e911"
+}
+.ic-exotic:before {
+	content: "\e912"
+}
+.ic-grooming1:before {
+	content: "\e913"
+}
+.ic-kardio:before {
+	content: "\e914"
+}
+.ic-laboratory1:before {
+	content: "\e915"
+}
+.ic-neurology:before {
+	content: "\e916"
+}
+.ic-oftalmology:before {
+	content: "\e917"
+}
+.ic-oncology:before {
+	content: "\e918"
+}
+.ic-ortopedy:before {
+	content: "\e919"
+}
+.ic-pharmacy:before {
+	content: "\e91a"
+}
+.ic-reproduce:before {
+	content: "\e91b"
+}
+.ic-surgery:before {
+	content: "\e91c"
+}
+.ic-terapy:before {
+	content: "\e91d"
+}
+.ic-clock:before {
+	content: "\e91e"
+}
+.ic-phone:before {
+	content: "\e91f"
+}
+.ic-logo:before {
+	content: "\e920"
+}

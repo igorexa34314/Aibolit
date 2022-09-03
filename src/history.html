@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title":"История компании"
+})
+
+<body>
+	<div class="wrapper">
+
+		@@include('html/header.html', {})
+
+		<main class="main">
+			<article class="history-page">
+				<div class="history-page__container">
+					<div class="navigation"><button class="nav-button" id="back"
+							onClick="history.go(-1);"><span>Назад</span></button></div>
+					<aside class="history-page__wrapper">
+						<h2 class="history-page__title page-title">История компании</h2>
+						<div class="nav-history">
+							<div class="nav-history__items">
+								<div class="nav-history__item">
+									<h3 class="nav-history__title"><a href="#history-1" class="nav-history__link">Подзаголовок
+											1</a></h3>
+								</div>
+								<div class="nav-history__item">
+									<h3 class="nav-history__title"><a href="#history-2" class="nav-history__link">Подзаголовок
+											2</a></h3>
+								</div>
+								<div class="nav-history__item">
+									<h3 class="nav-history__title"><a href="#history-3" class="nav-history__link">Подзаголовок
+											3</a></h3>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<div class="history-page__content">
+						<section class="history-page__section" id="history-1">
+							<div class="history-page__image"><img src="@img/history-page/section1.png" alt="Питомцы"></div>
+							<div class="history-page__block-text block-text">
+								<h3 class="block-text__title content-title">Подзаголовок 1</h3>
+								<div class="block-text__text">
+									<p>Терапия - область гуманной и ветеринарной медицины, занимающаяся непосредственно
+										лечением патологий, облегчением состояния больного и устранением симптомов заболеваний.
+									</p>
+									<p>
+										Терапевтическое отделение клиники Айболит занимается диагностикой и лечением следующих
+										болезней:</p>
+									<ul>
+										<li>органов пищеварения</li>
+										<li>органов сердечно-сосудистой системы</li>
+										<li>органов дыхательной системы</li>
+										<li>нервной системы</li>
+										<li>органов мочевыделительной системы</li>
+										<li>эндокринной системы</li>
+										<li>нарушения обмена веществ</li>
+										<li>кожи и ее производных</li>
+										<li>органов чувств</li>
+										<li>репродуктивной области</li>
+										<li>инфекционной и инвазионной природы</li>
+										<li>токсикологической природы</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section class="history-page__section" id="history-2">
+							<div class="history-page__block-text block-text">
+								<h3 class="block-text__title content-title">Подзаголовок 2</h3>
+								<div class="block-text__text">
+									<p>
+										В нашей клинике имеются как врачи-терапевты общей практики, так и узкие специалисты по
+										ряду перечисленных областей, что дает возможность излечивать тяжелые и редкие случаи
+										патологий.
+									</p>
+								</div>
+							</div>
+							<div class="history-page__image"><img src="@img/history-page/section2_1.png" alt="Питомцы"><img
+									src="@img/history-page/section2_2.png" alt="Питомцы"></div>
+							<div class="history-page__block-text block-text">
+								<div class="block-text__text">
+									<p>
+										Врач-терапевт подходит к лечению животного комплексно, предварительно изучив его
+										анамнез,
+										учитывая возраст, пол, породу, наличие хронических болезней, условия содержания, типа
+										кормления, оценив общее состояние питомца, полностью осмотрев его и назначив
+										необходимую
+										диагностику и соответствующее лечение.
+									</p>
+									<p>
+										Врачи клиники имеют широкий спектр диагностических возможностей, что является идеальным
+										условием для постановки точного диагноза, а значит и назначения того лечения, которое
+										наиболее эффективно справится с данным конкретным клиническим случаем.
+									</p>
+									<p>
+										Некоторую диагностику можно провести тут же на месте в течение буквально нескольких минут,
+										что немаловажно для экстренных случаев и значительно экономят время владельцам:
+									</p>
+									<ul>
+										<li>гематологический и биохимический анализы крови</li>
+										<li>исследование Т4 и кортизол</li>
+										<li>анализ газов крови</li>
+										<li>рентген</li>
+										<li>ультразвуковое исследование брюшной полости и сердца</li>
+										<li>микроскопия мазков и соскобов</li>
+										<li>люминесцентный тест на лишай</li>
+										<li>экспресс-анализы на основные вирусные заболевания</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section class="history-page__section" id="history-3">
+							<div class="history-page__block-text block-text">
+								<h3 class="block-text__title content-title">Подзаголовок 3</h3>
+								<div class="block-text__text">
+									<p>
+										Большинство исследований, требующих седации (эндоскопия, МРТ, лапароскопия), так же
+										доступны в течение суток. Более сложные анализы, такие как бактериологический посев,
+										гормоны, гистологическое исследование мы направляем в дистанционную лабораторию.
+									</p>
+									<p>
+										Получив результаты исследований врач приступает к анализу причин и механизмов развития
+										болезни и назначает лечение. Оно может быть медикаментозным (домашним или стационарным)
+										или оперативным (экстренным или плановым).
+									</p>
+									<p>
+										Эффективность терапии в большой степени зависит и от владельца животного, ведь именно
+										ему
+										необходимо будет соблюдать предписания врача, вовремя давать препараты или ставить
+										уколы,
+										следить за развитием динамики и симптомов, чтобы вовремя оповестить врача о
+										происходящих
+										изменениях, для своевременной коррекции лечения.
+									</p>
+									<p>
+										Кроме лечения терапевты занимаются и профилактикой заболеваний. Доктора с удовольствием
+										расскажут вам основы выращивания, содержания и кормления питомца, графики
+										дегельминтизаций
+										и прививок. Оформят ветеринарный паспорт и чипируют ваше животное.
+									</p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</article>
+		</main>
+
+		@@include('html/footer.html', {})
+
+		@@include('html/popup/select-city.html', {})
+	</div>
+
+	<!--Подключаем Jquery-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!--Подключаем JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+		integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

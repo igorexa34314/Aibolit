@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title":"Запись на прием"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/header.html', {})
+		<main class="main">
+			<section class="registration">
+				<div class="registration__container">
+					<div class="navigation"><button class="nav-button" id="back"
+							onClick="history.go(-1);"><span>Назад</span></button></div>
+					<div class="registration__content">
+						<h2 class="registration__title page-title">Запись на прием</h2>
+						<div class="registration__items">
+							<a href="#authorization" class="registration__item">
+								<div class="registration__block-text">
+									<h3 class="block-text__title">Онлайн-консультация</h3>
+									<div class="block-text__value">2000 ₽</div>
+								</div>
+							</a>
+							<a href="#authorization" class="registration__item">
+								<div class="registration__block-text">
+									<h3 class="block-text__title">Прием в клинике</h3>
+									<div class="block-text__value">Бесплатно</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('html/footer.html', {})
+
+		@@include('html/popup/select-city.html', {})
+		@@include('html/popup/authorization.html', {})
+	</div>
+
+	<!--Подключаем Jquery-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!--Подключаем JS-->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+		integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

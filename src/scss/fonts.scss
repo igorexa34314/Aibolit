@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'FuturaNewBold';
+	font-display: swap;
+	src: url("../fonts/FuturaNew/FuturaNewBold.woff2") format("woff2"), url("../fonts/FuturaNew/FuturaNewBold.woff") format("woff"), url("../fonts/FuturaNew/FuturaNewBold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FuturaNewBook';
+	font-display: swap;
+	src: url("../fonts/FuturaNew/FuturaNewBook.woff2") format("woff2"), url("../fonts/FuturaNew/FuturaNewBook.woff") format("woff"), url("../fonts/FuturaNew/FuturaNewBook.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FuturaNewDemi';
+	font-display: swap;
+	src: url("../fonts/FuturaNew/FuturaNewDemi.woff2") format("woff2"), url("../fonts/FuturaNew/FuturaNewDemi.woff") format("woff"), url("../fonts/FuturaNew/FuturaNewDemi.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SchoolBookCyrillic';
+	font-display: swap;
+	src: url("../fonts/SchoolBook/SchoolBookCyrillic.woff2") format("woff2"), url("../fonts/SchoolBook/SchoolBookCyrillic.woff") format("woff"), url("../fonts/SchoolBook/SchoolBookCyrillic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FuturaNewMedium';
+	font-display: swap;
+	src: url("../fonts/FuturaNew/FuturaNewMedium.woff2") format("woff2"), url("../fonts/FuturaNew/FuturaNewMedium.woff") format("woff"), url("../fonts/FuturaNew/FuturaNewMedium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+// Переменные шрифтов
+$futura400: 'FuturaNewBook';
+$futura500: 'FuturaNewMedium';
+$futura700: 'FuturaNewBold';
+$futurademi: 'FuturaNewDemi';
+$schoolbook: 'SchoolBookCyrillic';
+
+$bold: 700;
+$regular: 400;

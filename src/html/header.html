@@ -1,0 +1,25 @@
+<header class="header">
+	<div class="header__container">
+		<div class="header__logo">
+			<span class="logo ic-logo" title="Перейти на главную"></span>
+		</div>
+		<div class="header__menu menu">
+			<div class="menu__burger burger-menu"><span></span></div>
+			<div class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="" class="menu__link">Личный кабинет</a></li>
+					<li class="menu__item">
+						<a class="menu__link" id="about-us">О нас</a>
+						@@include('.//popup/about-menu.html', {})
+					</li>
+					<li class="menu__item"><a href="" class="menu__link">Новости и акции</a></li>
+					<li class="menu__item"><a href="./index.html#contacts-page" class="menu__link">Контакты</a></li>
+					<li class="menu__item"><a href="./blog.html" class="menu__link">Блог</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header__location"><a href="#cities" class="location-link" id="select-city-btn"><span
+					class="ic-location">Волгоград</span></a>
+		</div>
+	</div>
+</header>
